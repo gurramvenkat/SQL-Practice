@@ -1,4 +1,4 @@
-# SQL-Practice
+# SQL_Practice_01- Computer Manufacturers and Products Database
 This SQL script provides a comprehensive set of queries and operations for managing and interacting with a database containing manufacturers and products. Here is a breakdown of what each query or operation achieves:
 
 Creation of Manufacturers and Products Tables:
@@ -39,3 +39,69 @@ Exercise 19: Update the name of a product (Laser Printer).
 Exercise 20-21: Apply a 10% discount to all products and to products above a specific price.
 
 These queries cover a broad range of SQL operations, including basic selection, filtering, aggregation, updates, and joins.
+
+# SQL_Practice_02 - Employee Management Database
+This project provides a set of SQL queries for managing an employee and department database. The script includes SQL statements for creating tables, inserting sample data, and performing various operations like data retrieval, updating, and deletion. The database schema is designed to store and manage employees' information and their associated departments, budgets, and other details.
+
+Database Structure
+
+Tables
+
+Departments:
+
+Code: Unique identifier for each department.
+
+Name: Name of the department.
+
+Budget: Budget allocated to the department.
+
+Employees:
+
+SSN: Unique identifier (Social Security Number) for each employee.
+
+Name: First name of the employee.
+
+LastName: Last name of the employee.
+
+Department: The department code the employee belongs to (foreign key referencing the Departments table).
+
+Relationships
+Each employee belongs to a department, represented by the foreign key Department that references the Code column in the Departments table.
+
+SQL Operations
+The script supports a variety of SQL operations, including:
+
+Data Retrieval:
+
+Select the last names of employees.
+
+Select unique last names of employees.
+
+Retrieve employee data based on specific conditions (e.g., last name, department).
+
+Perform JOIN operations to fetch related data from multiple tables (e.g., employee details with department information).
+
+Aggregate Functions:
+
+Calculate the sum of the budgets of all departments.
+
+Count the number of employees in each department.
+
+Subqueries:
+
+Select departments with a budget greater than the average.
+
+Select employees working in departments with specific criteria (e.g., second-lowest budget).
+
+Inserts:
+
+Add new departments and employees.
+Updates:
+
+Modify department budgets (e.g., reduce by 10%).
+
+Reassign employees to different departments.
+
+Deletions:
+
+Delete employees based on department or budget conditions.
